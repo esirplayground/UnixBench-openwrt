@@ -25,6 +25,7 @@ define Package/$(PKG_NAME)
 	TITLE:= A benchmarking application
 	DEPENDS:=@TARGET_x86_64 +perl +perlbase-posix +perlbase-time +perlbase-io +perlbase-findbin \
 			+coreutils-od +make +gcc
+	URL:=https://github.com/esirplayground/UnixBench-openwrt
 endef
 
 
