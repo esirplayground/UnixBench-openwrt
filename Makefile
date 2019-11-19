@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=UnixBench
+PKG_NAME:=UnixBench-openwrt
 PKG_VERSION:=5.1.3
 PKG_RELEASE:=1
 PKG_LICENSE:=GPL v3
@@ -22,7 +22,7 @@ endef
 define Package/$(PKG_NAME)
 	CATEGORY:=eSir Playground
 	SUBMENU:=1. Performance
-	TITLE:= A benchmarking application
+	TITLE:= A Benchmarking Application
 	DEPENDS:=@TARGET_x86_64 +perl +perlbase-posix +perlbase-time +perlbase-io +perlbase-findbin \
 			+coreutils-od +make +gcc
 	URL:=https://github.com/esirplayground/UnixBench-openwrt
